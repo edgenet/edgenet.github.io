@@ -39,9 +39,9 @@
 <div class="slides">
 
 <section header="Page 1" footer="whatevr">
-    <p style="font-size:2.0em; text-align:center">The Edge Net</p>
-    <iframe width="320" height="240" src="http://www.youtube.com/embed/0_dfrHxLOrc?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
-    <p style="font-size:0.7em; text-align:center">
+    <h1 style="font-size:2.0em; text-align:center; text-shadow: none;">The Edge Net</h1>
+    <iframe width="640" height="360" src="http://www.youtube.com/embed/0_dfrHxLOrc?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    <p style="font-size:0.7em; text-align:center; margin-top: 0.5em;">
     The Edge Net lives safely at the edge of the Internet, on our smart phones.
     <br>It uses mobile WiFi hotspots to create "cells" for exchanging news and content.
     <br>Cells talk to cells, asynchronously, covering neighborhoods, and cities.
@@ -60,6 +60,10 @@
 
 </div>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/paper-full.min.js"></script>
+<script type="text/javascript" src="lib/js/edgenet-logo.js"></script>
+<script type="text/javascript" src="lib/js/jquery.edgenet-logo.js"></script>
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>
@@ -72,6 +76,8 @@
         history: true,
         center: true,
         mouseWheel: true,
+		height: 800,
+		width: 960,
         transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
         // Optional libraries used to extend on reveal.js
@@ -85,5 +91,20 @@
         ]
     });
 </script>
+
+<script type="text/javascript">
+(function($){
+	$(function(){
+		var isMobile = navigator.userAgent.match(/Mobile/i) || false;
+		if(!isMobile){
+			$("h1").edgenetLogo({
+				height: 135,
+				padding: 30
+			});
+		}
+	});
+})(jQuery);
+</script>
+
 </body>
 </html>
