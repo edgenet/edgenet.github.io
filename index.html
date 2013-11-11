@@ -98,8 +98,10 @@
 		var isMobile = navigator.userAgent.match(/Mobile/i) || false;
 		if(!isMobile){
 			$("h1").edgenetLogo({
-				height: 135,
-				padding: 30
+				"height": 135,
+				"padding": 30,
+                "svgLogo" : "lib/images/edgenet.svg",
+                "logoFallback" : "lib/images/edgenet.png"
 			});
 		}
 	});
