@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>edgenet logos</title>
+    <meta name="description" content="edgenet logo files and license">
+    <meta name="author" content="Roman Schmid">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+    }
+
+    #Container {
+        margin: 20px auto;
+        width: 320px;
+        text-align: left;
+    }
+
+    a {
+        color: #ED1C24;
+    }
+
+    a:hover, a:visited {
+        color: #B21C24;
+    }
+
+    ul.file-list {
+        list-style-type: none;
+        margin: 2em 0;
+        padding: 0;
+    }
+
+    ul.file-list ul {
+        margin: 0 0 1em 0;
+        list-style-type: disc;
+    }
+    </style>
+</head>
+
+<body>
+<div id="Container">
+    <h1>edgenet</h1>
+    <h2>edgnet logo files for screen/print usage</h2>
+    <ul class="file-list">
+        <li>
+            <strong>PNG-24, transparent</strong>
+            <ul>
+                <li><a href="files/edgenet-color-small.png">Color version small</a></li>
+                <li><a href="files/edgenet-color-large.png">Color version large</a></li>
+                <li><a href="files/edgenet-bw-small.png">Black &amp; white version small</a></li>
+                <li><a href="files/edgenet-bw-large.png">Black &amp; white version large</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>SVG, RGB</strong>
+            <ul>
+                <li><a href="files/edgenet.svg">Color version</a></li>
+                <li><a href="files/edgenet-bw.svg">Black &amp; white version</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Adobe Illustrator EPS, CMYK</strong>
+            <ul>
+                <li><a href="files/edgenet-CMYK.eps">Color version (CMYK)</a></li>
+                <li><a href="files/edgenet-BW.eps">Black &amp; white version</a></li>
+            </ul>
+        </li>
+        <li>
+            <strong>All files</strong>
+            <ul>
+                <li><a href="files/edgenet-logo.zip">All files listed above zipped</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">edgenet logo</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://bummzack.ch" property="cc:attributionName" rel="cc:attributionURL">http://bummzack.ch</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/js/paper-full.min.js"></script>
+<script type="text/javascript" src="../lib/js/edgenet-logo.js"></script>
+<script type="text/javascript" src="../lib/js/jquery.edgenet-logo.js"></script>
+
+<script type="text/javascript">
+(function($){
+    $(function(){
+        $("h1").edgenetLogo({
+            "height": 135,
+            "padding": 0,
+            "svgLogo" : "../lib/images/edgenet.svg",
+            "logoFallback" : "../lib/images/edgenet.png"
+        });
+    });
+})(jQuery);
+</script>
+
+</body>
+</html>
