@@ -49,7 +49,7 @@ Then add the following JavaScript right before the closing `</body>` tag.
 
 This will then replace the static image with the animated logo. See this [demo page](http://theedg.es/logo/demo.html).
 
-**Important:***
+**Important:**
 By default, the plugin will create a canvas with exactly the same dimensions as the DOM element and try to scale the logo within these bounds. If you apply this to very small DOM elements (either in height or width), the logo might not show up at all.
 Also make sure your path to the SVG file is correct.
 
@@ -58,9 +58,9 @@ Also make sure your path to the SVG file is correct.
 <table class = 'data'>
 	<thead>
 		<tr>
-			<th width="20%">Key</th>
-			<th width="20%">Default</th>
-			<th width="60%">Description</th>
+			<th width="16%">Key</th>
+			<th width="30%">Default</th>
+			<th width="54%">Description</th>
 		</tr>
 	</thead>
 	<tbody>
