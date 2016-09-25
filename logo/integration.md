@@ -47,7 +47,7 @@ Then add the following JavaScript right before the closing `</body>` tag.
 </script>
 ```
 
-This will then replace the static image with the animated logo. See this [demo page](http://theedg.es/logo/demo.html).
+This will then replace the static image with the animated logo. See this [demo page](http://edgenet.io/logo/demo.html).
 
 **Important:**
 By default, the plugin will create a canvas with exactly the same dimensions as the DOM element and try to scale the logo within these bounds. If you apply this to very small DOM elements (either in height or width), the logo might not show up at all.
